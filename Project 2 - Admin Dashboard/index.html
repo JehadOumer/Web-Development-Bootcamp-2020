@@ -1,0 +1,759 @@
+<!-- 
+  Made with Love by the team:
+    Jehad Oumer
+    Heba Rachid
+    Manel Benabid
+    Mohammed Hareb
+    Rissal Hedna
+    Ola Halawi
+    Mohamad Shour
+    Nasser Saleh
+ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- sidebar -->
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">
+                Shelby Co.Limited</a>
+                <div class="bottom-border pb-3">
+                  <img src="images/thomas-shelby.jpg" class="rounded-circle mr-3" width="50">
+                <a href="#" class="text-white">Thomas Shelby</a>
+                </div>
+                <ul class="navbar-nav flex-column mt-4">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 current">
+                      <i class="fas fa-home text-light fa-lg mr-3">
+                      </i>Dashboard
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-user text-light fa-lg mr-3">
+                      </i>Profile
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-envelope text-light fa-lg mr-3">
+                      </i>Inbox
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-shopping-cart text-light fa-lg mr-3">
+                      </i>Sales
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-chart-line text-light fa-lg mr-3">
+                      </i>Analytics
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-chart-bar text-light fa-lg mr-3">
+                      </i>Charts
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-table text-light fa-lg mr-3">
+                      </i>Tables
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-wrench text-light fa-lg mr-3">
+                      </i>Settings
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                      <i class="fas fa-file-alt text-light fa-lg mr-3">
+                      </i>Documentation
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <!-- end of sidebar -->
+            <!-- topnav -->
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <h4 class="text-light text-uppercase mb-0">Dashboard</h4>                 
+                </div>
+                <div class="col-md-5">
+                  <form action="">
+                    <div class="input-group">
+                      <input type="text" class="form-control search-input" placeholder="Search...">
+                      <button type="button" class="btn btn-light search-button"><i class="fas fa-search text-danger"></i></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-3">
+                  <ul class="navbar-nav">
+                    <il class="nav-item icon-parent">
+                      <a href="#" class="nav-link icon-bullet">
+                        <i class="fas fa-comments fa-secondary text-muted fa-lg">
+                        </i>
+                      </a>
+                    </il>
+
+                    <il class="nav-item icon-parent">
+                      <a href="#" class="nav-link icon-bullet">
+                        <i class="fas fa-bell fa-secondary text-muted fa-lg">
+                        </i>
+                      </a>
+                    </il>
+
+                    <il class="nav-item ml-md-auto" data-toggle="modal" data-target="#sign-out">
+                      <a href="#" class="nav-link">
+                        <i class="fas fa-sign-out-alt fa-secondary text-danger fa-lg">
+                        </i>
+                      </a>
+                    </il>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end of topnav -->
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Modal -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave ?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">Press logout to leave</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End of Modal -->
+    <!-- Cards -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9 col-xl-10 col-md-8 ml-auto">
+          <div class="row pt-md-5 mt-md-3 mb-5">
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                    <i class="fas fa-shopping-cart fa-3x text-warning"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Sales</h5>
+                      <h3>$135,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mbr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                    <i class="fas fa-money-bill fa-3x text-warning"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Expenses</h5>
+                      <h3>$39,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mbr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                    <i class="fas fa-users fa-3x text-info"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Users</h5>
+                      <h3>15,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mbr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between"> 
+                    <i class="fas fa-chart-line fa-3x text-danger"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Visitors</h5>
+                      <h3>45,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mbr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Cards -->
+    <!-- Tables -->
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+              <h3 class="text-muted text-center mb-3">Staff Salary</h3>
+              <table class="table table-striped bg-light text-center">
+                <thead>
+                  <tr class="text-muted">
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Date</th>
+                    <th>Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Jon Shelby</td>
+                    <td>&pound;2000</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Arthur Shelby</td>
+                    <td>&pound;5000</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Ada Thorne</td>
+                    <td>&pound;1500</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Polly Gray</td>
+                    <td>&pound;2000</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>Finn Shelby</td>
+                    <td>&pound;1000</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>Micheal Gray</td>
+                    <td>&pound;2000</td>
+                    <td>25/05/2014</td>
+                    <td><button type="button" class="btn btn-sm btn-outline-info">Message</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Pagination -->
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a href="#" class="page-link py-2 px-3">
+                      <span>&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a href="#" class="page-link py-2 px-3">
+                      1
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link py-2 px-3">
+                      2
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link py-2 px-3">
+                      3
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link py-2 px-3">
+                      <span>&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- End of Pagination -->
+            </div>
+            <div class="col-xl-6 col-12">
+              <h3 class="text-muted text-center mb-3">Recent Payments</h3>
+              <table class="table text-center table-dark table-hover">
+                <thead>
+                  <tr class="text-muted">
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Chester Campbell</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-success w-80 py-2">Approved
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Alfie Solomons</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-success w-80 py-2">Approved
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Darby Sabini</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-danger w-80 py-2">Pending
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Billy Kimber</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-danger w-80 py-2">Pending
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>Luca Changretta</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-success w-80 py-2">Approved
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>Oswald Mosley</td>
+                    <td>&pound;2000</td>
+                    <td>17/10/2013</td>
+                    <td><span class="badge badge-danger w-880 py-2">Pending
+                    </span></td>
+                  </tr>
+
+                </tbody>
+              </table>
+                <!-- Pagination -->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- End of Pagination -->
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Tables -->
+    <!-- Progress / task list -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row mb-4 align-items-center">
+              <div class="col-xl-6 col-12 mb-5 mb-xl-0">
+                <div class="bg-dark text-white p-4 rounded">
+                  <h4 class="mb-5">
+                    Success Rate
+                  </h4>
+                  <h6 class="mb-3">Race Bids</h6>
+                  <div class="progress mb-4" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped font-weight-bold" style="width:91%">
+                      91%
+                    </div>
+                  </div>
+
+                  <h6 class="mb-3">Car Manefactoring</h6>
+                  <div class="progress mb-4" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width:82%">
+                      82%
+                    </div>
+                  </div>
+
+                  <h6 class="mb-3">Investment</h6>
+                  <div class="progress mb-4" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width:67%">
+                      67%
+                    </div>
+                  </div>
+
+                  <h6 class="mb-3">Illegal Business</h6>
+                  <div class="progress mb-4" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width:10%">
+                      10%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-12">
+                <h4 class="text-muted p-3 mb-3">Tasks:</h4>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      Collect money from horse race bids
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>edit</h6>" data-html="true" data-placement="top"><i class="fas fa-edit fa-lg text-success mr-2"></i></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>delete</h6>" data-html="true" data-placement="top"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      Deal with Billy boys
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>edit</h6>" data-html="true" data-placement="top"><i class="fas fa-edit fa-lg text-success mr-2"></i></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>delete</h6>" data-html="true" data-placement="top"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      Investigate Micheal
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>edit</h6>" data-html="true" data-placement="top"><i class="fas fa-edit fa-lg text-success mr-2"></i></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>delete</h6>" data-html="true" data-placement="top"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      Check on Ada
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>edit</h6>" data-html="true" data-placement="top"><i class="fas fa-edit fa-lg text-success mr-2"></i></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>delete</h6>" data-html="true" data-placement="top"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      Make sure Arthur doesn't kill himself
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>edit</h6>" data-html="true" data-placement="top"><i class="fas fa-edit fa-lg text-success mr-2"></i></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="<h6>delete</h6>" data-html="true" data-placement="top"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Progress / task list -->
+    <!-- Activities / quick post -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row align-items-center">
+              <div class="col-xl-7">
+                <h4 class="text-muted mb-4">Recent Customer Activites</h4>
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseOne">
+                        <img src="images/chester-campbell.jpg" width="50" class="mr-3 rounded" alt="customer 1">
+                        Officer Campbell sent a new  letter-threat.
+                      </button>
+                    </div>
+                    <div class="collapse show" id="collapseOne" data-parent="#accordion">
+                      <div class="card-body">
+                        I better not find you or I will kill you.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseTwo">
+                        <img src="images/alfie-solomons.jpg" width="50" class="mr-3 rounded" alt="customer 2">
+                        Alfie sent a new text.
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        Where is my dog?
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseThree">
+                        <img src="images/oswald.jpg" alt="customer 3" width="50" class="mr-3 rounded">
+                        Oswald Mosley said something
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseThree" data-parent="#accordion">
+                      <div class="card-body">
+                        Our enemies deal in bricks and stones and bottles. We deal in reasoned principle, argument and fact.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseFour">
+                        <img src="images/luca.jpg" alt="customer 4" width="50" class="mr-3 rounded">
+                        Luca Changretta poked you
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseFour" data-parent="#accordion">
+                      <div class="card-body">
+                        I would have buried you all. But my mother, she knows you. She said it'll be worse for you if I let you live and take away everything that you have.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseFive">
+                        <img src="images/kimber.png" alt="customer 5" width="50" class="mr-3 rounded">
+                        Billy Kimber new jerk moment
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseFive" data-parent="#accordion">
+                      <div class="card-body">
+                        Nobody works with me. People work for me.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseSix">
+                        <img src="images/billy.jpg" alt="customer 6" width="50" class="mr-3 rounded">
+                        Jimmy McCavern is having his moment
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseSix" data-parent="#accordion">
+                      <div class="card-body">
+                        Did you not hear my song? These gentlemen are the Billy Boys...and me? I'm Jimmy
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-xl-5 mt-5">
+                <div class="card rounded">
+                  <div class="card-body">
+                    <h5 class="text-muted text-center mb-4">
+                      Quick Status Post
+                    </h5>
+                    <ul class="list-inline text-center py-3">
+                      <li class="list-inline-item mr-4">
+                        <a href="#"><i class="fas fa-pencil-alt text-success"></i>
+                        <span class="h5 text-muted">Status</span></a>
+                      </li>
+
+                      <li class="list-inline-item mr-4">
+                        <a href="#"><i class="fas fa-camera text-info"></i>
+                        <span class="h5 text-muted">Photo</span></a>
+                      </li>
+
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fas fa-map-marker-alt text-primary"></i>
+                        <span class="h5 text-muted">Check-in</span></a>
+                      </li>
+                    </ul>
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control py-2 mb-3" placeholder="What's Your Status...">
+                        <button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py-2 mb-5">
+                          Submit Post
+                        </button>
+                      </div>
+                    </form>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <i class="far fa-calendar-alt fa-8x text-warning d-block m-auto py-3"></i>
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">Mon, may 26</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <i class="far fa-clock fa-8x text-danger d-block m-auto py-3"></i>
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">3:50AM</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Activities / quick post -->
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row border-top pt-3">
+              <div class="col-lg-6 text-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item mr-2"><a href="#" class="text-dark">Shelby Co.Limited</a></li>
+                  <li class="list-inline-item mr-2"><a href="#" class="text-dark">About</a></li>
+                  <li class="list-inline-item mr-2"><a href="#" class="text-dark">Support</a></li>
+                  <li class="list-inline-item mr-2"><a href="#" class="text-dark">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 text-center">
+                <p>&copy; 2020 Copyright. Made with <i class="fas fa-heart text-danger"></i>
+                by <span class="text-success">Shelby Co.Limited</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd09c23954.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

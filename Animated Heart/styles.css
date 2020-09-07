@@ -1,0 +1,46 @@
+/* Jehad Oumer */
+body {
+    background-color: #fff;/* prefered white background */
+    margin:0;
+    padding:0;
+}
+.heart {
+    width:180px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    background-color: #ff3e3e;
+    transition: 3s; /* time it takes to transform  */
+    transform-origin: right botttom;/* pivot point  */
+}
+
+.heart:before{
+    content: ""; /* content of the div, if removed the div willl disaaper */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3e0000;
+    transition: 2s;
+    transform-origin: right bottom;
+}
+
+.heart:hover{
+    transform: rotate(45deg); /* angle of rotation */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.heart:hover:before {
+    background-color: #e22c2d;
+    transform: rotate(450deg) translatey(100px);/* angle of rotation  and positiong the element 100px on the y axis of its parent */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+h1{
+    font font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    margin-top: 10%;
+    
+}
